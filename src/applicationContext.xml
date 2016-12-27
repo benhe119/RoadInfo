@@ -15,7 +15,7 @@
 		<!-- 指定连接数据库的密码 -->
 		<property name="password" value="lmf123654" />
 	</bean>
-	<!-- 配置SessionFactory -->
+	<!-- 配置SessionFactory     -->
 	<bean id="sessionFactory"
 		class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
 		<property name="dataSource">

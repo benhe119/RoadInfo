@@ -1,10 +1,10 @@
-package com.hy.dao;
+package com.kinlonho.dao;
 
 
 
 import java.util.List;
 
-import com.hy.entity.User;
+import com.kinlonho.entity.User;
 
 public interface UserDao {
 	/**

@@ -9,11 +9,11 @@
 		<!-- 指定连接数据库的驱动 -->
 		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
 		<!-- 指定连接数据库的URL -->
-		<property name="url" value="jdbc:mysql://localhost:3306/test" />
+		<property name="url" value="jdbc:mysql://localhost:3306/mydb" />
 		<!-- 指定连接数据库的用户名 -->
 		<property name="username" value="root" />
 		<!-- 指定连接数据库的密码 -->
-		<property name="password" value="123456" />
+		<property name="password" value="lmf123654" />
 	</bean>
 	<!-- 配置SessionFactory -->
 	<bean id="sessionFactory"
@@ -35,25 +35,24 @@
 		<property name="mappingResources">
 			<!-- 指定hibernate映射文件 -->
 			<list>
-				
-				<value>com/hy/entity/User.hbm.xml</value>
+				<value>com/kinlonho/entity/User.hbm.xml</value>
 			</list>
 		</property>
 	</bean>
 
-	<bean id="loginService" class="com.hy.service.impl.LoginServiceImpl"></bean>
-	<bean id="loginServer" class="com.hy.action.LoginAction" scope="prototype">
+	<bean id="loginService" class="com.kinlonho.service.impl.LoginServiceImpl"></bean>
+	<bean id="loginServer" class="com.kinlonho.action.LoginAction" scope="prototype">
 		<property name="loginService" ref="loginService"></property>
 	</bean>
 	<!-- Dao配置 -->
-	<bean id="userDao" class="com.hy.dao.impl.UserDaoImpl">
+	<bean id="userDao" class="com.kinlonho.dao.impl.UserDaoImpl">
 		<property name="sessionFactory" ref="sessionFactory"></property>
 	</bean>
 	<!-- Service配置 -->
-	<bean id="userService" class="com.hy.service.impl.UserServiceImpl">
+	<bean id="userService" class="com.kinlonho.service.impl.UserServiceImpl">
 		<property name="userDao" ref="userDao"></property>
 	</bean>
-	<bean id="reg" class="com.hy.action.RegAction" scope="prototype">
+	<bean id="reg" class="com.kinlonho.action.RegAction" scope="prototype">
 		<property name="userService" ref="userService"></property>
 	</bean>
 	

@@ -1,8 +1,8 @@
-package com.hy.service;
+package com.kinlonho.service;
 
 import java.util.List;
 
-import com.hy.entity.User;
+import com.kinlonho.entity.User;
 
 public interface UserService {
 	/**

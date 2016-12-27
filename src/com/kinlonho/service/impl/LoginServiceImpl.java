@@ -1,6 +1,6 @@
-package com.hy.service.impl;
+package com.kinlonho.service.impl;
 
-import com.hy.service.LoginService;
+import com.kinlonho.service.LoginService;
 
 public class LoginServiceImpl implements LoginService {
 

@@ -18,7 +18,6 @@
 	<package name="reg" extends="struts-default">
 	    <action name="reg" class="reg">
 	        <result name="success">/regsuccess.jsp</result>
-
 			<result name="input">/reg.jsp</result>
 	    </action>
 	</package>

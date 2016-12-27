@@ -1,4 +1,4 @@
-package com.hy.dao.impl;
+package com.kinlonho.dao.impl;
 
 import java.sql.SQLException;
 import java.util.List;
@@ -12,8 +12,8 @@ import org.hibernate.Session;
 import org.springframework.orm.hibernate3.HibernateCallback;
 import org.springframework.orm.hibernate3.support.HibernateDaoSupport;
 
-import com.hy.dao.UserDao;
-import com.hy.entity.User;
+import com.kinlonho.dao.UserDao;
+import com.kinlonho.entity.User;
 
 public class UserDaoImpl extends HibernateDaoSupport implements UserDao{
 /***

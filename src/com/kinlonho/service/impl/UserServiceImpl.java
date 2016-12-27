@@ -1,10 +1,10 @@
-package com.hy.service.impl;
+package com.kinlonho.service.impl;
 
 import java.util.List;
 
-import com.hy.dao.UserDao;
-import com.hy.entity.User;
-import com.hy.service.UserService;
+import com.kinlonho.dao.UserDao;
+import com.kinlonho.entity.User;
+import com.kinlonho.service.UserService;
 
 public class UserServiceImpl implements UserService{
 	private UserDao userDao;

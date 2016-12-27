@@ -1,10 +1,10 @@
-package com.hy.action;
+package com.kinlonho.action;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import com.hy.entity.User;
-import com.hy.service.UserService;
+import com.kinlonho.entity.User;
+import com.kinlonho.service.UserService;
 import com.opensymphony.xwork2.ActionSupport;
 
 public class RegAction extends ActionSupport{

@@ -1,6 +1,6 @@
-package com.hy.action;
+package com.kinlonho.action;
 
-import com.hy.service.LoginService;
+import com.kinlonho.service.LoginService;
 import com.opensymphony.xwork2.ActionSupport;
 
 public class LoginAction extends ActionSupport {

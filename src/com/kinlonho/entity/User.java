@@ -1,4 +1,4 @@
-package com.hy.entity;
+package com.kinlonho.entity;
 
 public class User {
 	private Integer id;
